@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="">
+	<meta property="og:image" content="../resources/images/img.png">
+	<meta property="og:image:width" content="1920">
+	<meta property="og:image:height" content="1080">
+	<meta property="og:description" content="Competitive edge with AI solutions capable of predicting diseases through ECG and conducting precise CT data analysis">
+	<meta property="og:site_name" content="한국전화결제산업협회">
+	<meta property="og:locale" content="en_US">
+	<title>(사)한국전화결제산업협회 :: 안심하고 믿을 수 있도록 최선을 다하겠습니다</title>
+	<link rel="shortcut icon" href="../resources/favi/favicon.ico">
+	<!--
+	<link rel="apple-touch-icon" sizes="57x57" href="../resources/favi/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../resources/favi/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../resources/favi/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../resources/favi/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../resources/favi/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../resources/favi/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../resources/favi/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../resources/favi/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../resources/favi/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="../resources/favi/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../resources/favi/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../resources/favi/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../resources/favi/favicon-16x16.png">
+	<link rel="manifest" href="../resources/favi/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="../resources/favi/ms-icon-144x144.png">
+	-->
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="../resources/css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/swiper.jquery.min.css" />
+	<link rel="stylesheet" type="text/css" href="../resources/css/common.css" />
+	<script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../resources/js/common.js"></script>
+	<script>
+		var ww = $(window).width();
+		function mob(){
+			//$(".section").removeClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").addClass("slider");
+			$(".section12").addClass("slider");
+		};
+		function web(){
+			//$(".section").addClass("fp-auto-height fp-auto-height-responsive");
+			$(".section10").removeClass("slider");
+			$(".section12").removeClass("slider");
+		};
+		function closeNav(){
+			$(".btn-nav").removeClass("open");
+		};
+		 closeNav();
+			
+		$(function(){
+			if(ww < 750){
+				mob();
+			} else if (ww >= 750){
+				web();
+			};
+			$(".btn-top").click(function () {
+				//$.fn.fullpage.setScrollingSpeed(0);
+				$.fn.fullpage.moveTo(1, 1);
+			});
+		});
+		$(window).on('resize', function () {
+			ww = $(window).width();
+			if (ww < 750) {
+				mob();
+			}else{
+				web();
+			}
+		});
+	</script>
+	<script type="text/javascript" src="../resources/js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<!-- 공통헤더 -->
+	<div class="header">
+		<div class="inner">
+			<h1><a href="/"><span  class="blind">(사)한국전화결제산업협회</span></a></h1>
+			<div class="gnb">
+				<a href="javascript:;" class="btn-nav"><span class="blind">모바일nav열기</span></a>
+				<ul class="nav">
+					<li class="depth1">
+						<a href="1-intro.html" target="_self">협회소개</a>
+						<ul class="depth2">
+							<li><a href="1-intro.html#about" target="_self">통신과금서비스란?</a></li>
+							<li><a href="1-intro.html#history" target="_self">설립목적 및 연혁</a></li>
+							<li><a href="1-intro.html#partners" target="_self">회원사 소개</a></li>
+							<li><a href="1-intro.html#organization" target="_self">조직도</a></li>
+						</ul>
+					</li>
+					<li class="depth1">
+						<a href="2-tasks.html" target="_self">주요 업무</a>
+						<ul class="depth2">
+							<li><a href="2-tasks.html#protection" target="_self">이용자 보호</a></li>
+							<li><a href="2-tasks.html#industrial " target="_self">산업 활성화</a></li>
+							<li><a href="2-tasks.html#partnership" target="_self">사업자 협력관계 구축</a></li>
+						</ul>
+					</li>
+					<li class="depth1">
+						<a href="3-arbitration.html" target="_self">휴대폰결제중재센터</a>
+						<ul class="depth2">
+							<li><a href="3-arbitration.html#center" target="_self">휴대폰결제중재센터</a></li>
+							<li><a href="3-arbitration.html#role" target="_self">역할</a></li>
+							<li><a href="3-arbitration.html#procedure" target="_self">중재절차</a></li>
+						</ul>
+					</li>
+					<li class="depth1">
+						<a href="4-notice-list.html" target="_self">알림마당</a>
+						<ul class="depth2">
+							<li><a href="4-notice-list.html" target="_self">공지사항</a></li>
+							<li><a href="5-news-list.html" target="_self">모바일결제산업소식</a></li>
+							<li><a href="6-blog-list.html" target="_self">블로그</a></li>
+							<li><a href="7-data-list.html" target="_self">자료실</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //공통헤더 -->
+
+	<div class="container">
+		<div class="inner">
+			 <ul class="lnb">
+				<li onclick="lnb(this)" data-idx="0" class="is-active">통신과금서비스란?</li>
+				<li onclick="lnb(this)" data-idx="1">설립목적 및 연혁</li>
+				<li onclick="lnb(this)" data-idx="2">회원사 소개</li>
+				<li onclick="lnb(this)" data-idx="3">조직도</li>
+			</ul>
+			<div class="contents">
+				<h2>협회소개</h2>
+				<div class="cont-wrap intro">
+					<div class="cont-box about">통신과금서비스란?</div>
+					<div class="cont-box history">설립목적 및 연혁</div>
+					<div class="cont-box partners">회원사 소개</div>
+					<div class="cont-box organization">조직도</div>
+					<script>
+						$(function(){
+							var $top = $(window).width() > 720 ? 70 : 64;			
+							if(location.hash == "#about"){
+								setTimeout(function(){
+									$("html, body").scrollTop($(".about").offset().top - $top)
+								}, 100);
+							}else if(location.hash == "#history"){
+								setTimeout(function(){
+									$("html, body").scrollTop($(".history").offset().top - $top)
+								}, 100);
+							}else if(location.hash == "#partners"){
+								setTimeout(function(){
+									$("html, body").scrollTop($(".partners").offset().top - $top)
+								}, 100);
+							}else if(location.hash == "#organization"){
+								setTimeout(function(){
+									$("html, body").scrollTop($(".organization").offset().top - $top)
+								}, 100);
+							};
+						})
+					</script>
+				</div>
+			</div>
+			<a href="javascript:;" class="btn-top"><span>TOP</span></a>
+		</div>
+	</div>
+
+	<!-- 공통푸터 -->
+	<div class="footer">
+		<div class="inner">
+			<h2>
+				<a href="/" class="f-logo" target="_self" title="한국모바일결제산업협회  이동"><span class="blind">한국모바일결제산업협회</span></a>
+				<a href="javascript:;" class="btn-blog" target="_blank" title="한국모바일결제산업협회 블로그로 이동"><span class="blind">한국모바일결제산업협회 블로그</span></a>
+			</h2>
+			<div class="address">서울시 마포구 월드컵북로 396, 누리꿈스퀘어 비즈니스센터 12층</div>
+			<div class="tele">
+				<ul>
+					<li><a href="tel:07076010773">사무국<span>070.761.773</span></a></li>
+					<li><a href="tel:16441367">중재센터<span>1644.2367</span></a></li>
+					<li><a href="tel:027172367">Fax<span>02.717.2367</span></a></li>
+				</ul>
+			</div>
+			<ul class="sitemap">
+				<li>
+					<dl>
+						<dt>협회 소개</dt>
+						<dd>
+							<ul>
+								<li><a href="1-intro.html#about" target="_self">통신과금서비스란?</a></li>
+								<li><a href="1-intro.html#history" target="_self">설립목적 및 연혁</a></li>
+								<li><a href="1-intro.html#partners" target="_self">회원사 소개</a></li>
+								<li><a href="1-intro.html#organization" target="_self">조직도</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>주요업무</dt>
+						<dd>
+							<ul>
+								<li><a href="2-tasks.html#protection" target="_self">이용자 보호</a></li>
+								<li><a href="2-tasks.html#industrial " target="_self">산업 활성화</a></li>
+								<li><a href="2-tasks.html#partnership" target="_self">사업자 협력관계 구축</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>휴대폰결제중재센터</dt>
+						<dd>
+							<ul>
+								<li><a href="3-arbitration.html#center" target="_self">휴대폰결제중재센터</a></li>
+								<li><a href="3-arbitration.html#role" target="_self">역할</a></li>
+								<li><a href="3-arbitration.html#Procedure" target="_self">중재절차</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt>알림마당  </dt>
+						<dd>
+							<ul>
+								<li><a href="4-notice-list.html" target="_self">공지사항</a></li>
+								<li><a href="5-news-list.html" target="_self">모바일결제산업소식</a></li>
+								<li><a href="6-blog-list.html" target="_self">블로그</a></li>
+								<li><a href="7-data-list.html" target="_self">자료실</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
